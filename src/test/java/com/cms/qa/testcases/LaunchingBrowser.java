@@ -10,7 +10,8 @@ public class LaunchingBrowser {
 	@Test
 
 	public static void m1() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/src/test/java/chromedriver");
+		//System.getProperty("user.dir") + 
 //		System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver");
 		/*
 		 * ChromeOptions options = new ChromeOptions();
