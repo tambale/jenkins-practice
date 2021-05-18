@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 public class LaunchingBrowser {
-	@Test
+	@Test(enabled=false)
 
 	public static void m1() {
 		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
