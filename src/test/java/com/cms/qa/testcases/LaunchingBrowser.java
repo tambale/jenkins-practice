@@ -8,8 +8,8 @@ public class LaunchingBrowser {
 	@Test
 
 	public static void m1() {
-		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
-		System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
+//		System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver");
 		/*ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized"); // open Browser in maximized mode
 		options.addArguments("disable-infobars"); // disabling infobars
