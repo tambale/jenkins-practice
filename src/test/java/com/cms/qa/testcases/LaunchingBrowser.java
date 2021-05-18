@@ -10,11 +10,11 @@ public class LaunchingBrowser {
 	@Test
 
 	public static void m1() throws InterruptedException {
-		// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-		// + "/src/test/java/chromedriver");
-//		System.setProperty("webdriver.chrome.driver", "src/test/java/chromedriver");
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\test\\java\\chromedriver.exe");
+		
+		
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
+		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\java\\chromedriver.exe");
+	
 		/*
 		 * ChromeOptions options = new ChromeOptions();
 		 * options.addArguments("start-maximized"); // open Browser in maximized mode
