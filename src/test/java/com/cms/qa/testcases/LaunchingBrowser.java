@@ -12,7 +12,7 @@ public class LaunchingBrowser {
 	public static void m1() throws InterruptedException {
 		
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "src/test/java/chromedriver");
 		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\java\\chromedriver.exe");
 	
 		/*
