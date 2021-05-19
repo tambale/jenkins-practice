@@ -13,7 +13,6 @@ public class LaunchingBrowser {
 		
 		
 		System.setProperty("webdriver.chrome.driver", "/home/indoa/Downloads/chromedriver");
-		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\java\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("start-maximized"); // open Browser in maximized mode
