@@ -28,7 +28,7 @@ public class LaunchingBrowser {
 	@Test
 	public static void m2() {
 
-		System.out.println(System.getProperty("user.dir") + "/src/test/java/chromedriver");
+		//System.out.println(System.getProperty("user.dir") + "/src/test/java/chromedriver");
 		System.out.println(" i am in m2 method");
 
 	}
