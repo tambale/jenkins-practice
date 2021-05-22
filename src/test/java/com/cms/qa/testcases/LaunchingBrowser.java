@@ -18,24 +18,22 @@ public class LaunchingBrowser {
 
 	@Test
 
-	public static void m1() throws InterruptedException {
+	public void m1() throws InterruptedException {
 
-		System.setProperty("webdriver.gecko.driver", "/home/indoa/Downloads/geckodriver");
+		System.setProperty("webdriver.chrome.driver",
+				System.getProperty("user.dir") + "/src/test/java/chromedriver.exe");
 
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://cms.qa.vigocare.com/login?redirect=%2Fcases%2Findex%2Fcaseinfo%2F609e778ee7dc6f002b7d8846");
 		report = new ExtentReports(System.getProperty("user.dir") + "/ExtentReportResults.html");
 		test = report.startTest("ExtentDemo");
 		System.out.println("*********************************");
 		System.out.println(driver.getTitle());
 		System.out.println("*********************************");
-		if(driver.getTitle().equals("Google"))
-		{
-		test.log(LogStatus.PASS, "Navigated to the specified URL");
-		}
-		else
-		{
-		test.log(LogStatus.FAIL, "Test Failed");
+		if (driver.getTitle().equals("Google")) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
 		}
 		Thread.sleep(6000);
 		driver.quit();
@@ -46,10 +44,9 @@ public class LaunchingBrowser {
 	}
 
 	@Test
-	public static void m2() {
+	public void m2() {
 
-		// System.out.println(System.getProperty("user.dir") +
-		// "/src/test/java/chromedriver");
+		System.out.println(System.getProperty("user.dir") + "/src/test/java/chromedriver");
 		System.out.println(" i am in m2 method");
 
 	}
