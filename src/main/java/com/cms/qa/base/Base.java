@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import com.cms.qa.util.TestUtil;6
 
 
+
 public class Base {
 	public static WebDriver driver;
 	public static Properties prop;
