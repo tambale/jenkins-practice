@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 //integer
 
 //Test1
+//Test2
 public class InterviewTask1 {
 	public static WebDriver driver;
 
